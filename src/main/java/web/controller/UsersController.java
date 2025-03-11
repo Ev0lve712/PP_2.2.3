@@ -8,17 +8,17 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import web.model.User;
-import web.service.ServiceInt;
+import web.service.UserService;
 
 import java.util.List;
 
 @Controller
 public class UsersController {
 
-    private final ServiceInt userService;
+    private final UserService userService;
 
     @Autowired
-    public UsersController(ServiceInt userService) {
+    public UsersController(UserService userService) {
         this.userService = userService;
     }
 
